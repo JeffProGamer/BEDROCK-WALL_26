@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEDROCK WALL</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="BEDROCK WALL home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>BEDROCK WALL</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Overview</a>
+      <a href="security.html">Security</a>
+      <a href="vpn.html">VPN</a>
+      <a href="#download">Download</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Windows security site runner</p>
+        <h1>BEDROCK WALL</h1>
+        <p class="lead">
+          A user-ready security site that launches locally in the browser and gives users
+          access to the BEDROCK WALL desktop app for scans, hardening checks, and VPN setup.
+        </p>
+        <div class="actions">
+          <a class="button" href="../dist-new/BedrockWallApp.exe" download>Get BEDROCK WALL App</a>
+          <a class="button secondary" href="security.html">See Security Tools</a>
+          <a class="button subtle" href="#download">Install Info</a>
+        </div>
+      </div>
+
+      <div class="console-strip" aria-label="BEDROCK WALL status summary">
+        <div class="tile">
+          <span class="label">Scan Scope</span>
+          <span class="value">User</span>
+          <p>Start with the current Windows profile.</p>
+        </div>
+        <div class="tile">
+          <span class="label">VPN</span>
+          <span class="value">Safe</span>
+          <p>Profiles are checked before they are cached.</p>
+        </div>
+        <div class="tile">
+          <span class="label">Report</span>
+          <span class="value">Ready</span>
+          <p>Readable risk and hardening output.</p>
+        </div>
+        <div class="tile">
+          <span class="label">Trust</span>
+          <span class="value">Consent</span>
+          <p>Whole-PC scans ask first.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <p class="eyebrow">What users get</p>
+        <h2>Run the site, open the app, secure the basics.</h2>
+        <p>
+          BEDROCK WALL gives users a practical security workspace through a local site
+          runner and a Windows desktop app that handles device security actions.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="feature">
+          <div class="accent"></div>
+          <h3>Consent-first scanning</h3>
+          <p>User-profile scanning is quick. Whole-PC scanning asks permission and lists the drives first.</p>
+        </article>
+        <article class="feature">
+          <div class="accent blue"></div>
+          <h3>Validated VPN connector</h3>
+          <p>The VPN manager uses local profiles or caches fetched OpenVPN profiles after safety checks.</p>
+        </article>
+        <article class="feature">
+          <div class="accent amber"></div>
+          <h3>Cleaner signals</h3>
+          <p>The desktop and site use the same status colors, console layout, and plain-language states.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="workspace">
+        <div class="terminal" aria-label="Console preview">
+          <div class="terminal-line"><strong>scan</strong><span>profile target ready</span></div>
+          <div class="terminal-line"><strong>scope</strong><span>whole PC requires explicit permission</span></div>
+          <div class="terminal-line"><strong>vpn</strong><span>OpenVPN executable, profile safety, and GitHub reachability tracked</span></div>
+          <div class="terminal-line"><strong>report</strong><span>risk score, threats, and hardening checks written clearly</span></div>
+          <div class="meter"><span></span></div>
+          <div class="terminal-line"><strong>site</strong><span>local site runner opens BEDROCK WALL in the browser</span></div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="label">01</span>
+            <h3>Scan</h3>
+            <p>Choose user-profile or approved whole-PC scope.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="label">02</span>
+            <h3>Review</h3>
+            <p>Read the threat count, risk score, and hardening signals.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="label">03</span>
+            <h3>Connect</h3>
+            <p>Launch VPN through a local or validated cached OpenVPN profile.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="download">
+      <div class="section-header">
+        <p class="eyebrow">Download</p>
+        <h2>Use BEDROCK WALL on Windows.</h2>
+        <p>
+          Users open the BEDROCK WALL site runner first. From the site, they can launch
+          or download the Windows app for scans, hardening checks, reports, and validated
+          OpenVPN profile setup.
+        </p>
+        <div class="actions">
+          <a class="button" href="../dist-new/BedrockWallApp.exe" download>Get Windows App</a>
+          <a class="button subtle" href="security.html">Review Security Features</a>
+        </div>
+      </div>
+      <div class="grid two">
+        <article class="feature">
+          <div class="accent"></div>
+          <h3>Site runner flow</h3>
+          <p>Open <code>BedrockWallSite.exe</code> to run the BEDROCK WALL site locally.</p>
+        </article>
+        <article class="feature">
+          <div class="accent blue"></div>
+          <h3>Important note</h3>
+          <p>BEDROCK WALL is defensive software. It uses heuristic scans and visible Windows checks; it does not promise perfect detection.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    BEDROCK WALL local security workspace.
+  </footer>
+</body>
+</html>

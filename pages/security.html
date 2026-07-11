@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEDROCK WALL Security Console</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="BEDROCK WALL home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>BEDROCK WALL</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Overview</a>
+      <a href="security.html" aria-current="page">Security</a>
+      <a href="vpn.html">VPN</a>
+      <a href="index.html#download">Download</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <p class="eyebrow">Security console</p>
+        <h1>Scan, harden, report.</h1>
+        <p class="lead">
+          The desktop app handles local heuristic scanning. This site mirrors the operating model
+          and keeps scan scopes, hardening checks, and report shape visible.
+        </p>
+        <div class="actions">
+          <a class="button" href="../dist-new/BedrockWallApp.exe" download>Download BEDROCK WALL</a>
+          <a class="button secondary" href="vpn.html">VPN Gateway</a>
+        </div>
+      </div>
+
+      <div class="console-strip">
+        <div class="tile">
+          <span class="label">Profile Scan</span>
+          <span class="value">Fast</span>
+          <p>Current user profile target.</p>
+        </div>
+        <div class="tile">
+          <span class="label">Whole PC</span>
+          <span class="value">Ask first</span>
+          <p>Drive list shown before scan starts.</p>
+        </div>
+        <div class="tile">
+          <span class="label">Hardening</span>
+          <span class="value">Clear</span>
+          <p>Defender, firewall, and network signal.</p>
+        </div>
+        <div class="tile">
+          <span class="label">Output</span>
+          <span class="value">Report</span>
+          <p>Threat count, risk level, and paths.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="workspace">
+        <div class="terminal" aria-label="Report preview">
+          <div class="terminal-line"><strong>target</strong><span>C:\Users\CurrentUser</span></div>
+          <div class="terminal-line"><strong>threats</strong><span>0 suspicious files in latest clean run</span></div>
+          <div class="terminal-line"><strong>risk</strong><span>Low for clean scans; unknown checks stay unknown</span></div>
+          <div class="terminal-line"><strong>vpn</strong><span>validated connector status displayed in dashboard</span></div>
+          <div class="meter"><span></span></div>
+          <div class="terminal-line"><strong>status</strong><span>scanning animation keeps long runs visible</span></div>
+        </div>
+
+        <div class="checklist">
+          <div class="check-row">
+            <span class="dot"></span>
+            <div>
+              <h3>Windows Defender</h3>
+              <p>Real-time protection state is queried when Windows exposes it.</p>
+            </div>
+            <span class="label">Core</span>
+          </div>
+          <div class="check-row">
+            <span class="dot blue"></span>
+            <div>
+              <h3>Windows Firewall</h3>
+              <p>Domain, private, and public profile output is included in the report.</p>
+            </div>
+            <span class="label">Core</span>
+          </div>
+          <div class="check-row">
+            <span class="dot amber"></span>
+            <div>
+              <h3>Network Signal</h3>
+              <p>The public IP check is included as a network signal, not treated as proof of safety.</p>
+            </div>
+            <span class="label">Network</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <p class="eyebrow">Scan scopes</p>
+        <h2>Permission stays visible.</h2>
+      </div>
+      <div class="grid two">
+        <article class="feature">
+          <div class="accent blue"></div>
+          <h3>User Profile</h3>
+          <p>Targets the current Windows user directory and uses exact extension/name heuristics.</p>
+        </article>
+        <article class="feature">
+          <div class="accent amber"></div>
+          <h3>Whole PC</h3>
+          <p>Discovers local drives, shows them to the user, and starts only after approval.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    BEDROCK WALL security console.
+  </footer>
+</body>
+</html>
