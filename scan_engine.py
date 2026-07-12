@@ -6,8 +6,6 @@ from typing import List, Tuple
 SUSPICIOUS_EXTENSIONS = {
     '.bat',
     '.cmd',
-    '.dll',
-    '.exe',
     '.js',
     '.ps1',
     '.scr',
@@ -18,8 +16,10 @@ SUSPICIOUS_NAME_TOKENS = {
     'malware',
     'payload',
     'ransom',
+    'stealer',
     'trojan',
     'virus',
+    'worm',
 }
 
 SKIPPED_DIR_NAMES = {

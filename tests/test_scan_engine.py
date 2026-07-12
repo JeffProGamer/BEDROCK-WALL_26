@@ -26,3 +26,12 @@ def test_scan_files_uses_exact_file_extensions(tmp_path):
     results = scan_files(str(tmp_path))
 
     assert any(status == 'Safe' for path, status, _hash in results if path.endswith('release.exe.notes.txt'))
+
+
+def test_scan_files_does_not_flag_bedrock_wall_download(tmp_path):
+    app_file = tmp_path / 'BedrockWallApp.exe'
+    app_file.write_bytes(b'local app executable')
+
+    results = scan_files(str(tmp_path))
+
+    assert any(status == 'Safe' for path, status, _hash in results if path.endswith('BedrockWallApp.exe'))

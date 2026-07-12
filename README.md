@@ -38,6 +38,28 @@ The site runner includes:
 - VPN gateway page with profile safety checks and GitHub reachability controls
 - bundled Windows app download
 
+## Build Installer
+
+```powershell
+wix build installer\BedrockWallInstaller.wxs -o dist-msi\BedrockWallSetup.msi
+```
+
+The MSI installer is written to:
+
+```text
+dist-msi/BedrockWallSetup.msi
+```
+
+## User Release
+
+The closed user-facing release files are in:
+
+```text
+BEDROCK_WALL_USER_RELEASE
+```
+
+That folder contains only the site runner, MSI installer, and app executable needed by users.
+
 ## Test
 
 ```powershell

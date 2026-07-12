@@ -176,7 +176,7 @@ class BedrockWallApp(tk.Tk):
         ).pack(anchor="w")
         tk.Label(
             brand,
-            text="Security operations console",
+            text="User security app",
             fg=COLORS["muted"],
             bg=COLORS["bg"],
             font=("Segoe UI", 10),
@@ -278,13 +278,13 @@ class BedrockWallApp(tk.Tk):
 
     def _build_dashboard(self) -> None:
         frame = self.section_frames["Dashboard"]
-        self._section_title(frame, "Dashboard", "Live posture, VPN readiness, and recent activity.")
+        self._section_title(frame, "BEDROCK WALL", "Scan your device, review security posture, and open the local site.")
 
         actions = tk.Frame(frame, bg=COLORS["panel"])
         actions.grid(row=1, column=0, sticky="ew", padx=22, pady=(4, 14))
-        self._action_button(actions, "Open Site", lambda: open_dashboard_page("index.html"), COLORS["green"]).pack(side="left")
-        self._action_button(actions, "Security Site", lambda: open_dashboard_page("security.html"), COLORS["blue"]).pack(side="left", padx=(10, 0))
-        self._action_button(actions, "VPN Site", lambda: open_dashboard_page("vpn.html"), COLORS["amber"]).pack(side="left", padx=(10, 0))
+        self._action_button(actions, "Open BEDROCK WALL Site", lambda: open_dashboard_page("index.html"), COLORS["green"]).pack(side="left")
+        self._action_button(actions, "Security Tools", lambda: open_dashboard_page("security.html"), COLORS["blue"]).pack(side="left", padx=(10, 0))
+        self._action_button(actions, "VPN Tools", lambda: open_dashboard_page("vpn.html"), COLORS["amber"]).pack(side="left", padx=(10, 0))
 
         metrics = tk.Frame(frame, bg=COLORS["panel"])
         metrics.grid(row=2, column=0, sticky="ew", padx=22, pady=(0, 16))
@@ -338,7 +338,7 @@ class BedrockWallApp(tk.Tk):
 
     def _build_scan_page(self) -> None:
         frame = self.section_frames["Scan"]
-        self._section_title(frame, "Threat Scan", "Scan the current user profile, or approve a whole-PC scan.")
+        self._section_title(frame, "Security Scan", "Scan suspicious files by name and script type without flagging trusted apps by extension alone.")
 
         controls = tk.Frame(frame, bg=COLORS["panel"])
         controls.grid(row=1, column=0, sticky="ew", padx=22, pady=(8, 12))
@@ -386,7 +386,7 @@ class BedrockWallApp(tk.Tk):
 
     def _build_vpn_page(self) -> None:
         frame = self.section_frames["VPN"]
-        self._section_title(frame, "VPN Gateway", "Use a local profile or fetch a public relay with available network.")
+        self._section_title(frame, "VPN Tools", "Use a trusted local profile or validated public OpenVPN relay.")
 
         controls = tk.Frame(frame, bg=COLORS["panel"])
         controls.grid(row=1, column=0, sticky="ew", padx=22, pady=(8, 14))
@@ -423,7 +423,7 @@ class BedrockWallApp(tk.Tk):
 
     def _build_hardening_page(self) -> None:
         frame = self.section_frames["Hardening"]
-        self._section_title(frame, "Hardening", "Core Windows protections to keep BEDROCK WALL effective.")
+        self._section_title(frame, "Device Hardening", "Core Windows protections and network signals shown in plain language.")
 
         grid = tk.Frame(frame, bg=COLORS["panel"])
         grid.grid(row=1, column=0, sticky="nsew", padx=22, pady=(8, 22))
