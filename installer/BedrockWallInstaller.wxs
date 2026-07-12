@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package
+    Name="BEDROCK WALL"
+    Manufacturer="BEDROCK WALL"
+    Version="1.0.0"
+    UpgradeCode="{8FE31748-6718-45D4-9736-C8E503D94531}"
+    Scope="perMachine">
+    <MajorUpgrade DowngradeErrorMessage="A newer version of BEDROCK WALL is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <StandardDirectory Id="ProgramFilesFolder">
+      <Directory Id="INSTALLFOLDER" Name="BEDROCK WALL" />
+    </StandardDirectory>
+
+    <Feature Id="MainFeature" Title="BEDROCK WALL" Level="1">
+      <ComponentGroupRef Id="BedrockWallComponents" />
+    </Feature>
+
+    <ComponentGroup Id="BedrockWallComponents" Directory="INSTALLFOLDER">
+      <Component Id="SiteRunnerComponent" Guid="{68E22A9F-612B-4F0F-BB0A-D7693D30811B}">
+        <File Id="BedrockWallSiteExe" Source="dist-site\BedrockWallSite.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="DesktopAppComponent" Guid="{1D48D9D1-428B-4197-A6C3-C00C9D05C2F3}">
+        <File Id="BedrockWallAppExe" Source="dist-new\BedrockWallApp.exe" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Package>
+</Wix>
